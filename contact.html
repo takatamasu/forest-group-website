@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Group</title>
+    <!-- OPTIONAL METATAGS  -->
+    <meta name="description" content="Oficjalna strona internetowa najpiękniejszego parku w województwie Małopolskim!">
+    <meta name="keywords" content="park,  małopolska, natura">
+    <meta name="author" content="Jan Kowalski">
+    <!-- FAV ICON  -->
+    <link rel="icon" href="./assets/icons/fav-icon.ico" type="image/x-icon">
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- SVGs -->
+    <object type="image/svg+xml" data="./assets/svg/icons.svg" style="display:none"></object>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION  -->
+    <nav class="nav">
+
+        <!-- desktop nav -->
+        <div class="wrapper nav-container">
+
+            <a href="index.html" class="logo">
+                <svg class="fa-tree">
+                    <use href="./assets/svg/icons.svg#icon-tree"></use>
+                </svg><span>Forest</span>
+            </a>
+
+            <button class="burger-btn">
+                <svg>
+                    <use href="./assets/svg/icons.svg#burger-menu"></use>
+                </svg>
+            </button>
+
+            <div class="nav-desktop">
+                <a href="index.html" id="home" class="nav-desktop__link">Home</a>
+                <a href="index.html#aboutus" class="nav-desktop__link">O nas</a>
+                <a href="index.html#offers" class="nav-desktop__link">Oferta</a>
+                <a href="contact.html" class="nav-desktop__link">Kontakt</a>
+            </div>
+        </div>
+
+        <!-- mobile nav  -->
+        <div class="nav-mobile">
+            <a href="index.html">Home</a>
+            <a href="index.html#aboutus">O nas</a>
+            <a href="index.html#offers">Oferta</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+    </nav>
+
+
+    <!-- MAIN  -->
+    <main>
+
+        <!-- HEADER -->
+        <header class="header">
+            <p class="header__paragraph">Forest Group</p>
+            <h1 class="header__title">Najpiękniejszy park w Twojej okolicy!</h1>
+            <div class="header__hero-shadow"></div>
+        </header>
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact wrapper section">
+            <h2 class="contact__heading title">Skontaktuj się z nami</h2>
+
+            <div class="contact__container">
+                <form class="contact__form">
+
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" id="name" class="contact__form-input" required>
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="email" id="email" class="contact__form-input" required>
+
+                    </div>
+
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+
+                    <button type="submit" class="contact__form-btn contact__form-btn--special">Wyślij</button>
+
+                </form>
+
+                <div class="contact__map"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8982339277295!2d19.890269276632793!3d50.088192171525264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sMcDonald&#39;s!5e0!3m2!1spl!2spl!4v1757504465123!5m2!1spl!2spl"
+                        width="100%" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <section class="footer-desktop">
+            <div class="footer-desktop__container wrapper">
+
+                <div class="footer-desktop__logo"><svg class="fa-tree">
+                        <use href="./assets/svg/icons.svg#icon-tree"></use>
+                    </svg><span>Forest</span></div>
+                <div class="footer-desktop__info">
+
+                    <div class="footer-desktop__box">
+
+                        <h4 class="footer-desktop__info-heading">O nas</h4>
+                        <ul class="footer-desktop__info-list">
+                            <li>Historia</li>
+                            <li>Parki</li>
+                            <li>Opinie</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-desktop__box">
+                        <h4 class="footer-desktop__info-heading">Nasza firma</h4>
+                        <ul class="footer-desktop__info-list">
+                            <li>Praca</li>
+                            <li>Kadry</li>
+                            <li>Zarząd</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-desktop__box">
+                        <h4 class="footer-desktop__info-heading">Dokumenty</h4>
+                        <ul class="footer-desktop__info-list">
+                            <li>Wnioski </li>
+                            <li>Rezerwacje</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="footer-bottom">
+            <p>&copy; <span class="footer-bottom__year"></span> Forest Group Company Ltd. | Realizacja: <span
+                    class="footer-bottom__author">Agnieszka S.</span></p>
+        </section>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

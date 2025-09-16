@@ -1,0 +1,597 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body,
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1250px;
+}
+
+.title {
+  padding: 1.3em;
+  font-size: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.section {
+  scroll-margin-top: 90px;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  z-index: 11;
+}
+nav .nav-container {
+  position: relative;
+  display: flex;
+}
+nav .nav-container .logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  height: 100%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+nav .nav-container .logo .fa-tree {
+  width: 1.1em;
+  fill: #414141;
+  transition: fill 0.3s;
+}
+nav .nav-container .logo:hover > .fa-tree {
+  fill: rgb(42, 222, 114);
+}
+nav .nav-container .logo span {
+  padding-left: 0.9rem;
+}
+nav .nav-container .burger-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 6em;
+  padding: 30px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border 0.3s;
+  z-index: 100;
+}
+nav .nav-container .burger-btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 100%;
+  transition: fill 0.3s;
+}
+nav .nav-container .burger-btn svg:hover {
+  fill: rgb(42, 222, 114);
+}
+nav .nav-container .nav-desktop {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+nav .nav-container .nav-desktop a {
+  padding: 1.4em;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s, background-color 0.3s;
+}
+nav .nav-container .nav-desktop a:hover {
+  background-color: black;
+  color: white;
+}
+nav .nav-mobile {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.6s ease;
+  background-color: rgb(52, 85, 60);
+  background-image: url("../assets/svg/forest-nature-woods-park-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 10;
+}
+nav .nav-mobile--active {
+  transform: translateY(0);
+  overflow: hidden;
+}
+nav .nav-mobile a {
+  font-size: 2.8rem;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1em;
+  transition: color 0.2s;
+}
+nav .nav-mobile a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-image: url("../assets/img/jungle-small.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.header__paragraph, .header__title {
+  margin-left: 8%;
+  margin-right: 20px;
+  z-index: 2;
+}
+.header__paragraph {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.header__title {
+  font-size: 2.7rem;
+}
+.header__hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.aboutus__container {
+  display: flex;
+  flex-direction: column;
+}
+.aboutus__img {
+  margin: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus__img img {
+  width: 100%;
+  max-width: 500px;
+}
+.aboutus__info {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.aboutus__title {
+  padding: 0.3em;
+  margin-bottom: 0.5em;
+  font-size: 2.2rem;
+}
+.aboutus__text {
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/img/girl-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.banner__title {
+  font-size: 2.3rem;
+  padding: 1.3em;
+  margin: 2em;
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  z-index: 2;
+}
+.banner__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.offers__paragraph {
+  margin-bottom: 1.1em;
+  font-size: 1.65rem;
+  text-align: center;
+  justify-content: center;
+}
+.offers__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5em;
+}
+.offers__card {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5em;
+  margin: 1.5em;
+  border: 1px solid rgb(209, 209, 209);
+  box-shadow: 0px 5px 10px rgb(182, 182, 182);
+  border-radius: 10px;
+  background-color: transparent;
+  line-height: 1.5;
+  text-align: center;
+}
+.offers__card-title {
+  padding: 0.5em 0;
+  font-size: 2.5rem;
+}
+.offers__card-price {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.offers__card-option-in, .offers__card-option-out {
+  font-size: 1.3rem;
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+.offers__card-option-out {
+  color: grey;
+}
+.offers__card-btn {
+  font-size: 1.5rem;
+  padding: 0.5em 3em;
+  margin: 1em 0 1.5em 0;
+  border: 1px solid grey;
+  border-radius: 10px;
+  border: 1px solid rgb(209, 209, 209);
+  box-shadow: 0px 5px 10px rgb(182, 182, 182);
+  background-color: transparent;
+  text-align: center;
+  font-weight: 300;
+  transition: background-color 0.3s;
+}
+.offers__card-btn:hover {
+  border: 1px solid rgb(42, 222, 114);
+  box-shadow: 0px 5px 10px rgb(42, 222, 114);
+  background-color: rgb(42, 222, 114);
+}
+.offers .fa-solid {
+  width: 1em;
+  height: 1em;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.offers .fa-check {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(49%) saturate(666%) hue-rotate(88deg) brightness(95%) contrast(92%);
+}
+.offers .fa-minus {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(6083%) hue-rotate(59deg) brightness(83%) contrast(93%);
+}
+.offers .offers__more-btn {
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 2em auto;
+  padding: 1em 2em;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(42, 222, 114);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+.offers .offers__more-btn:hover {
+  background-color: rgb(34, 180, 100);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.footer .footer-desktop,
+.footer .footer-bottom {
+  background-color: rgb(245, 245, 245);
+}
+.footer .footer-bottom {
+  padding: 2em;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.footer .footer-desktop {
+  display: none;
+}
+.footer .footer-desktop__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 2;
+}
+.footer .footer-desktop__logo {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  padding: 1em;
+}
+.footer .footer-desktop__logo .fa-tree {
+  width: 1.15em;
+  fill: #414141;
+  transition: fill 0.3s;
+}
+.footer .footer-desktop__logo span {
+  padding-left: 0.5em;
+}
+.footer .footer-desktop__info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-right: 3.5em;
+}
+.footer .footer-desktop__box {
+  padding: 2.5em;
+}
+.footer .footer-desktop__info-heading {
+  font-size: 1.7rem;
+}
+.footer .footer-desktop li {
+  font-size: 1rem;
+  list-style: none;
+}
+.footer .footer-bottom {
+  border-top: 1px solid black;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+.contact__map {
+  display: flex;
+  justify-content: center;
+  min-width: 80%;
+  padding: 1em;
+  min-height: 300px;
+}
+.contact__map iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  min-height: 300px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.contact__map, .contact__form {
+  flex: 1;
+}
+.contact__form {
+  width: 70%;
+  min-width: 250px;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.contact__form label {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+}
+.contact__form input,
+.contact__form textarea {
+  padding: 0.8em;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.contact__form textarea {
+  min-height: 150px;
+  resize: vertical;
+  max-height: 300px;
+}
+.contact__form-btn--special {
+  font-size: 1.5rem;
+  padding: 0.5em 3em;
+  margin: 1em 0 1.5em 0;
+  border: 1px solid grey;
+  border-radius: 10px;
+  border: 1px solid rgb(209, 209, 209);
+  box-shadow: 0px 5px 10px rgb(182, 182, 182);
+  background-color: transparent;
+  text-align: center;
+  font-weight: 300;
+  transition: background-color 0.3s;
+}
+.contact__form-btn--special:hover {
+  border: 1px solid rgb(42, 222, 114);
+  box-shadow: 0px 5px 10px rgb(42, 222, 114);
+  background-color: rgb(42, 222, 114);
+}
+
+.offers-more__info {
+  padding: 1em;
+  margin: 0 1em 1em 1em;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid rgb(42, 222, 114);
+}
+
+@media (width >= 480px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (width >= 768px) {
+  html {
+    font-size: 68.75%;
+  }
+  .nav {
+    height: 95px;
+  }
+  .nav .nav-container .burger-btn {
+    display: none;
+  }
+  .nav .nav-container .nav-desktop {
+    display: flex;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .header {
+    height: 420px;
+    background-image: url("../assets/img/jungle-mid.jpg");
+  }
+  .banner__title {
+    margin: 0 4em;
+  }
+  .contact__container {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  .contact__map {
+    order: 1;
+    width: 50%;
+    min-width: 50%;
+    min-height: 400px;
+  }
+  .contact__map iframe {
+    height: 100%;
+    height: 400px;
+  }
+  .contact__form {
+    order: 2;
+    width: 50%;
+  }
+  .footer .footer-desktop {
+    display: flex;
+  }
+}
+@media (width >= 992px) {
+  html {
+    font-size: 75%;
+  }
+  .banner {
+    height: 300px;
+    background-image: url("../assets/img/girl-mid.jpg");
+  }
+  .banner__title {
+    margin: 0 6em;
+  }
+  .aboutus__container {
+    flex-direction: row;
+  }
+  .aboutus__img {
+    position: relative;
+    width: 50%;
+  }
+  .aboutus__img img {
+    position: absolute;
+    top: 0;
+  }
+  .aboutus__info {
+    width: 50%;
+    padding: 0 0.5em;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .aboutus__title {
+    padding: 0px;
+  }
+  .aboutus__text {
+    line-height: 1.7;
+  }
+}
+@media (width >= 1200px) {
+  html {
+    font-size: 81.25%;
+  }
+  .banner__title {
+    margin: 0 8em;
+  }
+}
+@media (width >= 1600px) {
+  html {
+    font-size: 87.5%;
+  }
+  .banner {
+    background-image: url("../assets/img/girl-big.jpg");
+  }
+  .header {
+    background-image: url("../assets/img/jungle-big.jpg");
+  }
+}/*# sourceMappingURL=style.css.map */

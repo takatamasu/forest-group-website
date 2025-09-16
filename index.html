@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Group</title>
+    <!-- OPTIONAL METATAGS  -->
+    <meta name="description" content="Oficjalna strona internetowa najpiękniejszego parku w województwie Małopolskim!">
+    <meta name="keywords" content="park,  małopolska, natura">
+    <meta name="author" content="Jan Kowalski">
+    <!-- FAV ICON  -->
+    <link rel="icon" href="./assets/icons/fav-icon.ico" type="image/x-icon">
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- SVGs -->
+    <object type="image/svg+xml" data="./assets/svg/icons.svg" style="display:none"></object>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION  -->
+    <nav class="nav">
+
+        <!-- desktop nav -->
+        <div class="wrapper nav-container">
+
+            <a href="index.html" class="logo">
+                <svg class="fa-tree">
+                    <use href="./assets/svg/icons.svg#icon-tree"></use>
+                </svg><span>Forest</span>
+            </a>
+
+            <button class="burger-btn">
+                <svg>
+                    <use href="./assets/svg/icons.svg#burger-menu"></use>
+                </svg>
+            </button>
+
+            <div class="nav-desktop">
+                <a href="#" id="home" class="nav-desktop__link">Home</a>
+                <a href="#aboutus" class="nav-desktop__link">O nas</a>
+                <a href="#offers" class="nav-desktop__link">Oferta</a>
+                <a href="contact.html" class="nav-desktop__link">Kontakt</a>
+            </div>
+        </div>
+
+        <!-- mobile nav  -->
+        <div class="nav-mobile">
+            <a href="#">Home</a>
+            <a href="#aboutus">O nas</a>
+            <a href="#offers">Oferta</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- MAIN  -->
+    <main>
+
+        <!-- HEADER -->
+        <header class="header">
+            <p class="header__paragraph">Forest Group</p>
+            <h1 class="header__title">Najpiękniejszy park w Twojej okolicy!</h1>
+            <div class="header__hero-shadow"></div>
+        </header>
+
+        <!-- ABOUT US section -->
+        <section id="aboutus" class="aboutus section wrapper">
+
+            <h2 class="aboutus__heading title">o nas</h2>
+
+            <div class="aboutus__container">
+
+                <div class="aboutus__img"><img src="./assets/img/waters-small.jpg"
+                        alt="Drzewko rosnące na środku jeziora">
+                </div>
+
+                <div class="aboutus__info">
+                    <h3 class="aboutus__title">Niezapomniane przygody</h3>
+                    <p class="aboutus__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum. www.MMCSchool.pl</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- BANNER section  -->
+        <section class="banner hero-img">
+            <div class="banner__title wrapper">Przygoda dla całej rodziny</div>
+            <div class="banner__shadow"></div>
+        </section>
+
+        <!-- OFFERS section  -->
+        <section id="offers" class="offers section">
+            <h2 class="offers__heading title">oferta</h2>
+            <p class="offers__paragraph">Wybierz jedną z naszych wspaniałych ofert!</p>
+
+            <div class="offers__cards">
+                <div class="offers__card">
+                    <p class="offers__card-title">Demo</p>
+                    <p class="offers__card-price">$0</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <p class="offers__card-option-out"><svg class="fa-solid fa-minus">
+                            <use href="./assets/svg/icons.svg#minus-icon"></use>
+                        </svg>opcja poza pakietem</p>
+                    <p class="offers__card-option-out"><svg class="fa-solid fa-minus">
+                            <use href="./assets/svg/icons.svg#minus-icon"></use>
+                        </svg>opcja poza pakietem</p>
+                    <p class="offers__card-option-out"><svg class="fa-solid fa-minus">
+                            <use href="./assets/svg/icons.svg#minus-icon"></use>
+                        </svg>opcja poza pakietem</p>
+                    <button class="offers__card-btn">Wybierz</button>
+                </div>
+
+                <div class="offers__card">
+                    <p class="offers__card-title">Standard</p>
+                    <p class="offers__card-price">$99</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <p class="offers__card-option-out"><svg class="fa-solid fa-minus">
+                            <use href="./assets/svg/icons.svg#minus-icon"></use>
+                        </svg>opcja poza pakietem</p>
+                    <p class="offers__card-option-out"><svg class="fa-solid fa-minus">
+                            <use href="./assets/svg/icons.svg#minus-icon"></use>
+                        </svg>opcja poza pakietem</p>
+                    <button class="offers__card-btn">Wybierz</button>
+                </div>
+
+                <div class="offers__card">
+                    <p class="offers__card-title">Premium</p>
+                    <p class="offers__card-price">$299</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <p class="offers__card-option-in"><svg class="fa-solid fa-check">
+                            <use href="./assets/svg/icons.svg#check-icon"></use>
+                        </svg> opcja w pakiecie</p>
+                    <button class="offers__card-btn">Wybierz</button>
+                </div>
+            </div>
+
+            <a href="offers.html" class="offers__more-btn">Więcej ofert</a>
+
+        </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <section class="footer-desktop">
+            <div class="footer-desktop__container wrapper">
+
+                <div class="footer-desktop__logo"><svg class="fa-tree">
+                        <use href="./assets/svg/icons.svg#icon-tree"></use>
+                    </svg><span>Forest</span></div>
+                <div class="footer-desktop__info">
+
+                    <div class="footer-desktop__box">
+
+                        <h4 class="footer-desktop__info-heading">O nas</h4>
+                        <ul class="footer-desktop__info-list">
+                            <li>Historia</li>
+                            <li>Parki</li>
+                            <li>Opinie</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-desktop__box">
+                        <h4 class="footer-desktop__info-heading">Nasza firma</h4>
+                        <ul class="footer-desktop__info-list">
+                            <li>Praca</li>
+                            <li>Kadry</li>
+                            <li>Zarząd</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-desktop__box">
+                        <h4 class="footer-desktop__info-heading">Dokumenty</h4>
+                        <ul class="footer-desktop__info-list">
+                            <li>Wnioski </li>
+                            <li>Rezerwacje</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="footer-bottom">
+            <p>&copy; <span class="footer-bottom__year"></span> Forest Group Company Ltd. | Realizacja: <span
+                    class="footer-bottom__author">Agnieszka S.</span></p>
+        </section>
+    </footer>
+
+    <!-- SCRIPT JS  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
