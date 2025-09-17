@@ -54,6 +54,7 @@ nav {
   height: 70px;
   border-bottom: 1px solid rgb(0, 0, 0);
   z-index: 11;
+  background-color: rgb(255, 255, 255);
 }
 nav .nav-container {
   position: relative;
