@@ -82,16 +82,14 @@ nav {
 		}
 
 		.nav-desktop {
-			// display: flex;
 			display: none;
 			justify-content: flex-end;
 			align-items: center;
 			width: 100%;
 			height: 100%;
-
 			background-color: c.$light;
 
-			a {
+			&__link {
 				padding: 1.4em;
 				font-size: 2rem;
 				text-decoration: none;
@@ -107,7 +105,14 @@ nav {
 					background-color: c.$dark;
 					color: c.$light;
 				}
+
+				&--active {
+					background-color: c.$dark;
+					color: c.$light;
+				}
 			}
+
+			
 		}
 	}
 
