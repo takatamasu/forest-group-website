@@ -4,6 +4,7 @@ const body = document.body
 
 const handleNav = () => {
 	navMobile.classList.toggle('nav-mobile--active')
+	navMobile.classList.add('nav-mobile--animated')
 	body.classList.toggle('no-scroll')
 }
 
