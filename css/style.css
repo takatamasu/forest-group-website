@@ -521,6 +521,7 @@ nav .nav-mobile a:hover {
   }
   .nav-mobile {
     display: none;
+    visibility: hidden;
   }
   .header {
     height: 420px;
