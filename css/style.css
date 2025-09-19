@@ -479,10 +479,16 @@ nav .nav-mobile a:hover {
   justify-content: center;
   padding: 0.5em;
 }
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: 2px solid rgb(42, 222, 114);
+  background-color: rgba(42, 222, 114, 0.03);
+}
 .contact__form input,
 .contact__form textarea {
   width: 100%;
   padding: 0.8em;
+  font-size: 1.1rem;
   border: 1px solid grey;
   border-radius: 5px;
 }
