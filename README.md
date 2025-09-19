@@ -39,8 +39,9 @@ The final assignment of the Frontend Developer course at [MMC School](https://lw
 
 ## 🧠 JavaScript Features
 
-- `Event listeners` for hamburger menu
+- `event listeners` for hamburger menu
 - `new Date` for automatic date updating
+- `onscroll` for scrollspy (highlights menu items while scrolling on desktop)
 
 <a id="live"></a>
 
