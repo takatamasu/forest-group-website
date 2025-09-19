@@ -6,17 +6,17 @@
 
 .wrapper {
 	position: relative;
-	margin: 0 auto;
 	width: 100%;
 	max-width: 1250px;
+	margin: 0 auto;
 }
 
 .title {
 	padding: 1.3em;
-	font-size: 2.8rem;
+	font-size: 2.7rem;
+	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: 300;
 }
 
 .section {
@@ -24,6 +24,6 @@
 }
 
 .active {
-	background-color: black;
 	color: white;
+	background-color: black;
 }

@@ -24,17 +24,17 @@ button {
 
 .wrapper {
   position: relative;
-  margin: 0 auto;
   width: 100%;
   max-width: 1250px;
+  margin: 0 auto;
 }
 
 .title {
   padding: 1.3em;
-  font-size: 2.8rem;
+  font-size: 2.7rem;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 300;
 }
 
 .section {
@@ -42,8 +42,8 @@ button {
 }
 
 .active {
-  background-color: black;
   color: white;
+  background-color: black;
 }
 
 nav {
@@ -52,24 +52,23 @@ nav {
   display: flex;
   width: 100%;
   height: 70px;
+  background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(0, 0, 0);
   z-index: 11;
-  background-color: rgb(255, 255, 255);
 }
 nav .nav-container {
   position: relative;
-  display: flex;
-  z-index: 11;
   background-color: rgb(255, 255, 255);
+  z-index: 11;
 }
 nav .nav-container .logo {
-  display: flex;
-  align-items: center;
   position: absolute;
   top: 50%;
-  left: 20px;
-  height: 100%;
+  left: 1em;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  height: 100%;
   font-size: 3rem;
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -91,13 +90,13 @@ nav .nav-container .burger-btn {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
   width: 6em;
+  height: 100%;
   padding: 30px;
-  border: 1px solid transparent;
   background-color: transparent;
-  cursor: pointer;
+  border: 1px solid transparent;
   transition: border 0.3s;
+  cursor: pointer;
 }
 nav .nav-container .burger-btn svg {
   position: absolute;
@@ -120,16 +119,16 @@ nav .nav-container .nav-desktop {
   background-color: rgb(255, 255, 255);
 }
 nav .nav-container .nav-desktop__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
   padding: 1.4em;
   font-size: 2rem;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 2;
   transition: color 0.3s, background-color 0.3s;
+  z-index: 2;
 }
 nav .nav-container .nav-desktop__link::after {
   content: "";
@@ -139,8 +138,8 @@ nav .nav-container .nav-desktop__link::after {
   width: 100%;
   height: 0;
   background-color: rgb(0, 0, 0);
-  z-index: -2;
   transition: height 0.3s;
+  z-index: -2;
 }
 nav .nav-container .nav-desktop__link:hover::after {
   height: 100%;
@@ -156,20 +155,20 @@ nav .nav-container .nav-desktop__link--active {
 }
 nav .nav-mobile {
   position: fixed;
-  width: 100%;
-  height: 100vh;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(-100%);
+  width: 100%;
+  height: 100vh;
   background-color: rgb(255, 255, 255);
   background-image: url("../assets/svg/forest-nature-plants-trees-svgrepo-com.svg");
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: contain;
+  transform: translateY(-100%);
   z-index: 10;
 }
 nav .nav-mobile--active {
@@ -180,13 +179,13 @@ nav .nav-mobile--animated {
   transition: transform 0.6s;
 }
 nav .nav-mobile a {
+  margin: 1em;
   font-size: 2.8rem;
-  color: rgb(0, 0, 0);
   font-weight: 600;
-  letter-spacing: 1.5px;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 1em;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
   transition: color 0.2s, scale 0.2s;
 }
 nav .nav-mobile a:hover {
@@ -201,19 +200,19 @@ nav .nav-mobile a:hover {
   justify-content: center;
   width: 100%;
   height: 300px;
+  color: rgb(255, 255, 255);
   background-image: url("../assets/img/jungle-small.jpg");
   background-position: center;
   background-size: cover;
-  color: rgb(255, 255, 255);
 }
 .header__paragraph, .header__title {
-  margin-left: 8%;
   margin-right: 20px;
+  margin-left: 8%;
   z-index: 2;
 }
 .header__paragraph {
-  font-size: 2rem;
   margin-bottom: 0.5em;
+  font-size: 2rem;
 }
 .header__title {
   font-size: 2.7rem;
@@ -233,43 +232,43 @@ nav .nav-mobile a:hover {
   flex-direction: column;
 }
 .aboutus__img {
-  margin: 0 1em;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 1em;
 }
 .aboutus__img img {
   width: 100%;
   max-width: 500px;
 }
 .aboutus__info {
-  padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1em;
   text-align: center;
 }
 .aboutus__title {
-  padding: 0.3em;
   margin-bottom: 0.5em;
+  padding: 0.3em;
   font-size: 2.2rem;
 }
 .aboutus__text {
   margin-bottom: 1em;
   font-size: 1.5rem;
-  line-height: 1.5;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .banner {
   position: relative;
-  width: 100%;
-  height: 220px;
-  margin-top: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 220px;
+  margin-top: 1.5em;
   text-align: center;
   background-image: url("../assets/img/girl-small.jpg");
   background-size: cover;
@@ -277,11 +276,11 @@ nav .nav-mobile a:hover {
   background-attachment: fixed;
 }
 .banner__title {
-  font-size: 2.3rem;
   padding: 1.3em;
   margin: 2em;
-  border: 1px solid rgb(255, 255, 255);
+  font-size: 2.3rem;
   color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   z-index: 2;
 }
 .banner__shadow {
@@ -295,10 +294,10 @@ nav .nav-mobile a:hover {
 }
 
 .offers__paragraph {
+  justify-content: center;
   margin-bottom: 1.1em;
   font-size: 1.65rem;
   text-align: center;
-  justify-content: center;
 }
 .offers__cards {
   display: flex;
@@ -312,12 +311,12 @@ nav .nav-mobile a:hover {
   max-width: 300px;
   padding: 0.5em;
   margin: 1.5em;
-  border: 1px solid rgb(209, 209, 209);
-  box-shadow: 0px 5px 10px rgb(182, 182, 182);
-  border-radius: 10px;
-  background-color: transparent;
-  line-height: 1.5;
   text-align: center;
+  line-height: 1.5;
+  background-color: transparent;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(182, 182, 182);
 }
 .offers__card-title {
   padding: 0.5em 0;
@@ -330,31 +329,30 @@ nav .nav-mobile a:hover {
   font-weight: 600;
 }
 .offers__card-option-in, .offers__card-option-out {
-  font-size: 1.3rem;
   display: inline-block;
   width: 200px;
+  font-size: 1.3rem;
   text-align: left;
 }
 .offers__card-option-out {
   color: grey;
 }
 .offers__card-btn {
-  font-size: 1.5rem;
   padding: 0.5em 3em;
   margin: 1em 0 1.5em 0;
-  border: 1px solid grey;
-  border-radius: 10px;
-  border: 1px solid rgb(209, 209, 209);
-  box-shadow: 0px 5px 10px rgb(182, 182, 182);
-  background-color: transparent;
-  text-align: center;
+  font-size: 1.5rem;
   font-weight: 300;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(182, 182, 182);
   transition: background-color 0.3s;
 }
 .offers__card-btn:hover {
+  background-color: rgb(42, 222, 114);
   border: 1px solid rgb(42, 222, 114);
   box-shadow: 0px 5px 10px rgb(42, 222, 114);
-  background-color: rgb(42, 222, 114);
 }
 .offers .fa-solid {
   width: 1em;
@@ -372,21 +370,21 @@ nav .nav-mobile a:hover {
   display: block;
   width: -moz-max-content;
   width: max-content;
-  margin: 2em auto;
   padding: 1em 2em;
+  margin: 2em auto;
   font-size: 1.7rem;
+  text-align: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
   background-color: rgb(42, 222, 114);
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  text-align: center;
 }
 .offers .offers__more-btn:hover {
   background-color: rgb(34, 180, 100);
-  transform: translateY(-2px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .footer .footer-desktop,
@@ -395,8 +393,8 @@ nav .nav-mobile a:hover {
 }
 .footer .footer-bottom {
   padding: 2em;
-  text-align: center;
   font-size: 1.1rem;
+  text-align: center;
 }
 .footer .footer-desktop {
   display: none;
@@ -411,8 +409,8 @@ nav .nav-mobile a:hover {
 .footer .footer-desktop__logo {
   display: flex;
   align-items: center;
-  font-size: 4rem;
   padding: 1em;
+  font-size: 4rem;
 }
 .footer .footer-desktop__logo .fa-tree {
   width: 1.15em;
@@ -454,13 +452,13 @@ nav .nav-mobile a:hover {
   display: flex;
   justify-content: center;
   min-width: 80%;
-  padding: 1em;
   min-height: 300px;
+  padding: 1em;
 }
 .contact__map iframe {
   width: 100%;
-  height: 100%;
   max-width: 700px;
+  height: 100%;
   min-height: 300px;
   border: 1px solid grey;
   border-radius: 5px;
@@ -482,33 +480,32 @@ nav .nav-mobile a:hover {
 }
 .contact__form input,
 .contact__form textarea {
-  padding: 0.8em;
   width: 100%;
+  padding: 0.8em;
   border: 1px solid grey;
   border-radius: 5px;
 }
 .contact__form textarea {
   min-height: 150px;
+  max-height: 350px;
   resize: vertical;
-  max-height: 300px;
 }
 .contact__form-btn--special {
-  font-size: 1.5rem;
   padding: 0.5em 3em;
   margin: 1em 0 1.5em 0;
-  border: 1px solid grey;
-  border-radius: 10px;
-  border: 1px solid rgb(209, 209, 209);
-  box-shadow: 0px 5px 10px rgb(182, 182, 182);
-  background-color: transparent;
-  text-align: center;
+  font-size: 1.5rem;
   font-weight: 300;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(182, 182, 182);
   transition: background-color 0.3s;
 }
 .contact__form-btn--special:hover {
+  background-color: rgb(42, 222, 114);
   border: 1px solid rgb(42, 222, 114);
   box-shadow: 0px 5px 10px rgb(42, 222, 114);
-  background-color: rgb(42, 222, 114);
 }
 
 .offers-more__info {
@@ -550,6 +547,7 @@ nav .nav-mobile a:hover {
   }
   .contact__container {
     flex-direction: row;
+    align-items: flex-start;
     margin: 0 auto;
     padding: 0 1em;
   }
@@ -560,8 +558,8 @@ nav .nav-mobile a:hover {
     min-height: 400px;
   }
   .contact__map iframe {
-    height: 100%;
-    height: 400px;
+    min-height: 100%;
+    height: 450px;
   }
   .contact__form {
     order: 2;
@@ -594,9 +592,9 @@ nav .nav-mobile a:hover {
     top: 0;
   }
   .aboutus__info {
+    align-items: flex-start;
     width: 50%;
     padding: 0 0.5em;
-    align-items: flex-start;
     text-align: left;
   }
   .aboutus__title {

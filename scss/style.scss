@@ -13,31 +13,27 @@ nav {
 	display: flex;
 	width: 100%;
 	height: 70px;
-
+	background-color: c.$light;
 	border-bottom: 1px solid c.$dark;
 	z-index: 11;
-	background-color: c.$light;
 
 	.nav-container {
 		position: relative;
-		display: flex;
-		z-index: 11;
 		background-color: c.$light;
+		z-index: 11;
 
 		.logo {
-			display: flex;
-			align-items: center;
 			position: absolute;
 			top: 50%;
-			left: 20px;
-			height: 100%;
-
+			left: 1em;
 			transform: translateY(-50%);
+			display: flex;
+			align-items: center;
+			height: 100%;
 			font-size: 3rem;
 			color: c.$dark;
 			text-decoration: none;
 			cursor: pointer;
-
 			overflow: hidden;
 
 			.fa-tree {
@@ -59,13 +55,13 @@ nav {
 			position: absolute;
 			top: 0;
 			right: 0;
-			height: 100%;
 			width: 6em;
+			height: 100%;
 			padding: 30px;
-			border: 1px solid transparent;
 			background-color: transparent;
-			cursor: pointer;
+			border: 1px solid transparent;
 			transition: border 0.3s;
+			cursor: pointer;
 
 			svg {
 				position: absolute;
@@ -91,18 +87,16 @@ nav {
 			background-color: c.$light;
 
 			&__link {
+				position: relative;
+				display: flex;
+				align-items: center;
+				height: 100%;
 				padding: 1.4em;
 				font-size: 2rem;
 				text-decoration: none;
 				color: c.$dark;
-
-				height: 100%;
-				display: flex;
-				align-items: center;
-
-				position: relative;
-				z-index: 2;
 				transition: color 0.3s, background-color 0.3s;
+				z-index: 2;
 
 				&::after {
 					content: '';
@@ -112,9 +106,8 @@ nav {
 					width: 100%;
 					height: 0;
 					background-color: c.$dark;
-
-					z-index: -2;
 					transition: height 0.3s;
+					z-index: -2;
 				}
 
 				&:hover::after {
@@ -137,27 +130,20 @@ nav {
 
 	.nav-mobile {
 		position: fixed;
-		width: 100%;
-		height: 100vh;
-
 		top: 0;
 		left: 0;
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
-		transform: translateY(-100%);
-
+		width: 100%;
+		height: 100vh;
 		background-color: c.$light;
-
 		background-image: url('../assets/svg/forest-nature-plants-trees-svgrepo-com.svg');
-
 		background-repeat: no-repeat;
-		background-size: contain;
 		background-position: center;
-
+		background-size: contain;
+		transform: translateY(-100%);
 		z-index: 10;
 
 		&--active {
@@ -170,13 +156,13 @@ nav {
 		}
 
 		a {
+			margin: 1em;
 			font-size: 2.8rem;
-			color: c.$dark;
 			font-weight: 600;
-			letter-spacing: 1.5px;
 			text-transform: uppercase;
 			text-decoration: none;
-			margin: 1em;
+			letter-spacing: 1.5px;
+			color: c.$dark;
 			transition: color 0.2s, scale 0.2s;
 		}
 
@@ -195,21 +181,21 @@ nav {
 	justify-content: center;
 	width: 100%;
 	height: 300px;
+	color: c.$light;
 	background-image: url('../assets/img/jungle-small.jpg');
 	background-position: center;
 	background-size: cover;
-	color: c.$light;
 
 	&__paragraph,
 	&__title {
-		margin-left: 8%;
 		margin-right: 20px;
+		margin-left: 8%;
 		z-index: 2;
 	}
 
 	&__paragraph {
-		font-size: 2rem;
 		margin-bottom: 0.5em;
+		font-size: 2rem;
 	}
 
 	&__title {
@@ -235,10 +221,10 @@ nav {
 	}
 
 	&__img {
-		margin: 0 1em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin: 0 1em;
 
 		img {
 			width: 100%;
@@ -247,37 +233,37 @@ nav {
 	}
 
 	&__info {
-		padding: 1em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding: 1em;
 		text-align: center;
 	}
 
 	&__title {
-		padding: 0.3em;
 		margin-bottom: 0.5em;
+		padding: 0.3em;
 		font-size: 2.2rem;
 	}
 
 	&__text {
 		margin-bottom: 1em;
 		font-size: 1.5rem;
-		line-height: 1.5;
 		font-weight: 300;
+		line-height: 1.5;
 	}
 }
 
 // BANNER SECTION
 .banner {
 	position: relative;
-	width: 100%;
-	height: 220px;
-	margin-top: 1.5em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 220px;
+	margin-top: 1.5em;
 	text-align: center;
 	background-image: url('../assets/img/girl-small.jpg');
 	background-size: cover;
@@ -285,11 +271,11 @@ nav {
 	background-attachment: fixed;
 
 	&__title {
-		font-size: 2.3rem;
 		padding: 1.3em;
 		margin: 2em;
-		border: 1px solid rgb(255, 255, 255);
+		font-size: 2.3rem;
 		color: c.$light;
+		border: 1px solid rgb(255, 255, 255);
 		z-index: 2;
 	}
 
@@ -307,10 +293,10 @@ nav {
 // OFFERS SECTION
 .offers {
 	&__paragraph {
+		justify-content: center;
 		margin-bottom: 1.1em;
 		font-size: 1.65rem;
 		text-align: center;
-		justify-content: center;
 	}
 
 	&__cards {
@@ -324,18 +310,14 @@ nav {
 	&__card {
 		width: 100%;
 		max-width: 300px;
-
 		padding: 0.5em;
 		margin: 1.5em;
-
-		border: 1px solid rgb(209, 209, 209);
-		box-shadow: 0px 5px 10px rgb(182, 182, 182);
-		border-radius: 10px;
-		background-color: transparent;
-
-		line-height: 1.5;
-
 		text-align: center;
+		line-height: 1.5;
+		background-color: transparent;
+		border: 1px solid rgb(209, 209, 209);
+		border-radius: 10px;
+		box-shadow: 0px 5px 10px rgb(182, 182, 182);
 	}
 
 	&__card-title {
@@ -351,9 +333,9 @@ nav {
 
 	&__card-option-in,
 	&__card-option-out {
-		font-size: 1.3rem;
 		display: inline-block;
 		width: 200px;
+		font-size: 1.3rem;
 		text-align: left;
 	}
 
@@ -362,24 +344,21 @@ nav {
 	}
 
 	&__card-btn {
-		font-size: 1.5rem;
 		padding: 0.5em 3em;
 		margin: 1em 0 1.5em 0;
-
-		border: 1px solid grey;
-		border-radius: 10px;
-		border: 1px solid rgb(209, 209, 209);
-		box-shadow: 0px 5px 10px rgb(182, 182, 182);
-
-		background-color: transparent;
-		text-align: center;
+		font-size: 1.5rem;
 		font-weight: 300;
+		text-align: center;
+		background-color: transparent;
+		border: 1px solid rgb(209, 209, 209);
+		border-radius: 10px;
+		box-shadow: 0px 5px 10px rgb(182, 182, 182);
 		transition: background-color 0.3s;
 
 		&:hover {
+			background-color: rgb(42, 222, 114);
 			border: 1px solid rgb(42, 222, 114);
 			box-shadow: 0px 5px 10px rgb(42, 222, 114);
-			background-color: rgb(42, 222, 114);
 		}
 	}
 
@@ -401,22 +380,22 @@ nav {
 	.offers__more-btn {
 		display: block;
 		width: max-content;
-		margin: 2em auto;
 		padding: 1em 2em;
+		margin: 2em auto;
 		font-size: 1.7rem;
+		text-align: center;
 		text-decoration: none;
 		color: c.$light;
 		background-color: rgb(42, 222, 114);
 		border-radius: 8px;
 		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 		transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-		text-align: center;
 	}
 
 	.offers__more-btn:hover {
 		background-color: rgb(34, 180, 100);
-		transform: translateY(-2px);
 		box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+		transform: translateY(-2px);
 	}
 }
 
@@ -429,8 +408,8 @@ nav {
 
 	.footer-bottom {
 		padding: 2em;
-		text-align: center;
 		font-size: 1.1rem;
+		text-align: center;
 	}
 	.footer-desktop {
 		display: none;
@@ -440,15 +419,14 @@ nav {
 			justify-content: space-between;
 			align-items: center;
 			margin: 0 auto;
-
 			line-height: 2;
 		}
 
 		&__logo {
 			display: flex;
 			align-items: center;
-			font-size: 4rem;
 			padding: 1em;
+			font-size: 4rem;
 
 			.fa-tree {
 				width: 1.15em;
@@ -501,17 +479,14 @@ nav {
 	&__map {
 		display: flex;
 		justify-content: center;
-
 		min-width: 80%;
-
-		padding: 1em;
-
 		min-height: 300px;
+		padding: 1em;
 
 		iframe {
 			width: 100%;
-			height: 100%;
 			max-width: 700px;
+			height: 100%;
 			min-height: 300px;
 			border: 1px solid grey;
 			border-radius: 5px;
@@ -527,9 +502,7 @@ nav {
 		width: 70%;
 		min-width: 250px;
 		padding: 0.5em;
-
 		font-size: 1.5rem;
-
 		text-align: center;
 
 		label {
@@ -540,38 +513,34 @@ nav {
 
 		input,
 		textarea {
-			padding: 0.8em;
 			width: 100%;
-
+			padding: 0.8em;
 			border: 1px solid grey;
 			border-radius: 5px;
 		}
 
 		textarea {
 			min-height: 150px;
+			max-height: 350px;
 			resize: vertical;
-			max-height: 300px;
 		}
 
 		&-btn--special {
-			font-size: 1.5rem;
 			padding: 0.5em 3em;
 			margin: 1em 0 1.5em 0;
-
-			border: 1px solid grey;
-			border-radius: 10px;
-			border: 1px solid rgb(209, 209, 209);
-			box-shadow: 0px 5px 10px rgb(182, 182, 182);
-
-			background-color: transparent;
-			text-align: center;
+			font-size: 1.5rem;
 			font-weight: 300;
+			text-align: center;
+			background-color: transparent;
+			border: 1px solid rgb(209, 209, 209);
+			border-radius: 10px;
+			box-shadow: 0px 5px 10px rgb(182, 182, 182);
 			transition: background-color 0.3s;
 
 			&:hover {
+				background-color: c.$color-primary;
 				border: 1px solid c.$color-primary;
 				box-shadow: 0px 5px 10px c.$color-primary;
-				background-color: c.$color-primary;
 			}
 		}
 	}
